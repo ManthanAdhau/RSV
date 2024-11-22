@@ -1,0 +1,1003 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: #fff;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(128, 128, 128, 0.52);
+  border-radius: 12px;
+  padding: 5px 10px;
+  width: 444px;
+  height: 28px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.shadow {
+  position: absolute;
+  width: 200px; /* Adjust width to match your image */
+  height: 100px; /* Adjust height to match your image */
+  bottom: 10px; /* Slightly below the car image */
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  z-index: 1;
+  filter: blur(20px);
+}
+.line1,
+.line2,
+.line3 {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 2px 0;
+}
+
+.searchbar .lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px;
+}
+
+.table-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+table {
+  width: 100%; /* Ensure table stretches horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.font-5 {
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.font-7 {
+  font-size: 0.875rem; /* Adjust font size as needed */
+}
+
+
+.searchbar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+.searchbar i {
+  color: white;
+}
+
+.searchbar i:hover {
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.line1 {
+  width: 31px;
+  height: 0px;
+  top: 42px;
+  left: 38px;
+  gap: 0px;
+  border: 3px 0px 0px 0px;
+  opacity: 0px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+
+  font-family: "Quicksand";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  color: #ffb400;
+}
+.hero {
+  text-align: center;
+  /* padding: 50px 20px; */
+}
+.hero h1 {
+  font-size: 300px;
+  font-weight: 400;
+  line-height: 383.5px;
+  font-family: "Allerta Stencil";
+  color: #55c2ff;
+  /* text-align: left; */
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.hero img {
+  width: 935px;
+  height: 625px;
+  margin-top: -130px;
+}
+.hero p {
+  font-size: 24px;
+  color: #ccc;
+  margin-top: 20px;
+  text-align: center;
+  width: 48%;
+  margin-inline: auto;
+  font-family:
+  Quicksand;
+}
+.section {
+  padding: 50px 20px;
+}
+
+.car-name {
+  margin-bottom: 0px;
+  font-size: 64px !important;
+  font-family: Quicksand  !important;
+
+font-weight: 600;
+line-height: 80px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+ .border-btm td {
+  border-bottom: 1px solid #ddd; /* Adds a subtle bottom border */
+}
+.car-name-2 {
+  font-size: 48px;
+}
+.color-price {
+  color: #55c2ff !important;
+  margin-top: 0px;
+}
+.fas {
+  color: #ffac30 !important;
+}
+.review {
+  font-size: 8px;
+  color: #ffac30 !important;
+  margin-left: -21px;
+}
+.review-white {
+  font-size: 8px;
+  color: #fff !important;
+}
+.info {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 54px;
+}
+
+.car-parts {
+  margin-bottom: 0px !important;
+}
+.engine {
+  width: 51px !important;
+  height: 37px !important;
+}
+.transmission {
+  width: 44px !important;
+  height: 39px !important;
+}
+.safety {
+  width: 33px !important;
+  height: 39px !important;
+}
+.seating {
+  width: 34px !important;
+  height: 38px !important;
+}
+.body {
+  width: 63px !important;
+  height: 25px !important;
+}
+.fuel {
+  width: 42px !important;
+  height: 45px !important;
+}
+.color-text {
+  color: #55c2ff;
+}
+.font-2{
+  font-size: 96px!important;
+  font-family: Quicksand;
+  font-weight: 300;
+}
+.font-12{
+  font-size: 96px!important;
+  font-family: Quicksand;
+  font-weight: 700;
+}
+.font-4{
+  font-size: 14px;
+  font-family: Quicksand;
+  font-weight: 500;
+}
+.font-5{
+  font-size: 24px;
+  font-family: Quicksand;
+  font-weight: 500;
+}
+.font-10{
+  font-size: 32px!important;
+  font-family: Quicksand;
+  font-weight: 500;
+}
+.font-11{
+  font-size: 64px!important;
+  font-family: Quicksand;
+  font-weight: 500;
+}
+.font-7{
+  font-size: 24px!important;
+  font-family: Quicksand;
+  font-weight: 700;
+}
+.font-9{
+  font-size: 36px!important;
+  font-family: Quicksand;
+  font-weight: 700;
+}
+.font-8{
+  font-size: 48px!important;
+  font-family: Quicksand;
+  font-weight: 700;
+}
+.font-3{
+  font-size: 20px;
+  font-family: Quicksand;
+  font-weight: 300;
+}
+.font-6{
+  font-family: Quicksand;
+  font-size: 32px!important;
+  font-weight: 600!important;
+  line-height: 46.88px;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+}
+.spar-2{
+  font-family: Spartan;
+font-size: 64px;
+font-weight: 200;
+line-height: 81.92px;
+
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.spar-4{
+  font-family: Spartan!important;
+  font-size: 96px!important;
+  font-weight: 600;
+  line-height: 122.88px;
+ 
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+
+}
+.spar-3{
+  font-family: Spartan;
+font-size: 96px;
+font-weight: 100;
+line-height: 122.88px;
+
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  
+
+}
+.offer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 6rem;
+}
+.procons{
+  width:60%;
+}
+.offer-text {
+  width: 30%;
+  font-size: 24px;
+    font-family: 'Quicksand';
+}
+.offer-btn {
+  background-color: #ffb400;
+  color: black !important;
+  font-weight: bold;
+}
+.price-info {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  gap: 6rem;
+ 
+
+}
+.price-info-text {
+  width: 33%;
+}
+.version {
+  margin-left: 76px;
+}
+.version ul {
+  display: flex;
+  gap: 5rem;
+}
+thead.curve {
+  border-radius: 22px !important;
+}
+.version ul li {
+  list-style-type: none;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Quicksand;
+}
+.varient {
+  color: #ffb400;
+  border-bottom: 1px solid #ffb400;
+}
+.mileage-section {
+  margin-left: 100px;
+}
+.mileage-section p {
+  margin: 0;
+  font-size: 24px;
+}
+.mileage {
+  margin-top: 0px;
+}
+.advice {
+  display: flex;
+  align-items: center;
+}
+.advice-text {
+  margin-left: 100px;
+}
+.color-head {
+  font-size: 64px !important;
+  color: #ffac30 !important;
+  margin-bottom: 0 !important;
+}
+.big-head {
+  font-size: 96px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-family:Spartan;
+  font-weight:600;
+}
+.advice-para {
+  width: 82%;
+  
+}
+.advice img {
+  width: 1056px !important;
+  margin-left: -190px;
+  transform: scaleX(-1)!important;
+}
+
+.config {
+  margin-inline: 10rem;
+  margin-top: 2rem;
+}
+.config .gap {
+  gap: 8rem;
+}
+.color {
+  color: #ffac30;
+}
+.color i {
+  margin-left: 12px;
+}
+.config-para {
+
+  margin: 25px 100px;
+  font-size: 24px!important;
+  font-family:Quicksand;
+
+
+  font-weight: 600;
+  line-height: 38.04px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  :
+
+}
+.p-2 {
+  padding: .5rem !important;
+  font-size: 32px;
+}
+.verticle {
+  border: 1px solid white;
+}
+.verticle2 {
+  width: 85%;
+  margin-inline: auto;
+  border: 2px solid #ffffff;
+}
+.comma {
+  font-size: 200px;
+  font-weight: 400;
+  font-family: Quicksand;
+}
+.quick3 {
+  font-family: "Quicksand";
+  font-weight: 300;
+  font-size: 80px !important;
+}
+.white-img {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.white-img img {
+  margin: 0 !important;
+  transform: scaleX(-1);
+}
+.pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.green_text {
+  color: #00ba6c;
+  font-size: 36px;
+  font-family: Quicksand;
+  margin-right: 60px;
+}
+.custom-width{
+  width:50%
+}
+.orange_text {
+  color: #fe5959;
+  font-size: 36px;
+  font-family: Quicksand;
+  margin-right: 60px; 
+}
+.pros-cons {
+  align-items: center;
+}
+.line-distance {
+  line-height: 3rem;
+}
+.user-review {
+  margin-left: 6rem;
+  font-size:96px;
+}
+.rating-para {
+  margin-left: 6rem;
+}
+.review-btn {
+  margin-left: 6rem;
+}
+.rev-btn {
+  text-align: center;
+}
+.container-sm p {
+  margin-left: 12px;
+}
+.section-4 {
+  padding: 50px 20px;
+  margin-left: 119px;
+}
+.custom-margin {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.section-4 h2 {
+  font-size: 36px;
+  color: #fff;
+  font-family: "Quicksand";
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.section-4 span {
+  font-size: 36px;
+  color: #fff;
+  font-family: "Quicksand";
+  font-weight: 700;
+}
+.section-4 p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.section-4 img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+.version ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.version li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.version li.active {
+ 
+  color: #FFAC30; /* Text color when active */
+}
+
+.version li:hover {
+
+  color:#FFAC30;
+}
+.p-2.active {
+ 
+  color: #FFAC30; /* Active text color */
+}
+.d-flex {
+  display: flex;
+}
+.section h2 {
+  font-size: 36px;
+  color: #fff;
+  font-family: "Quicksand";
+  font-weight: "300";
+}
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.section img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 20px;
+  border: 1px solid #ffb400;
+}
+.button:hover {
+  background-color: #e6a200;
+}
+.table-container {
+  overflow-x: auto;
+  padding: 10px 205px 50px 100px;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
+table tr {
+  border-radius: 15px;
+}
+table th {
+  background-color: #333;
+  color: #55c2ff;
+}
+.reviews,
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.reviewss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 100px;
+}
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 5px 0;
+}
+.review1 {
+  padding: 20px;
+  flex: 1;
+  border: 2px solid white;
+}
+.review1 p {
+  font-size: 16px;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+.review,
+.video {
+  border-radius: 10px;
+
+  min-width: 300px;
+}
+.review h3,
+.video h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.review p,
+.video p {
+  font-size: 16px;
+}
+.review .rating,
+.video .rating {
+  color: #ffb400;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+}
+.tab {
+  cursor: pointer;
+}
+
+.tab.active {
+
+  color: #FFAC30; 
+}
+.button-play {
+  background-color: #fff; /* Blue */
+  border: none;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.play-icon {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 25px solid #ffac30;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  left: 41%;
+}
+.old-xuv {
+  width: 634px !important;
+}
+p.review-text {
+  font-size: 20px;
+}
+p.reviewer {
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  .lines {
+    display: none;
+  }
+
+  .searchbar {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .version {
+    max-height: 100px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+   
+    padding: 10px; /* Optional: add some padding */
+    margin: 10px 0; /* Optional: add margin */
+}
+span.review {
+  margin-left: 10px;
+}
+.version ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+h2.car-name {
+  margin-left: 40px;
+}
+span.car-name {
+  margin-left: 40px;
+}
+version li.active {
+  
+  color: #ffb400; /* Active state text color */
+  border-color: #0056b3;
+}
+.config {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 10px 0; /* Optional: add some padding */
+ 
+}
+
+.hstack {
+  display: inline-flex; /* Use inline-flex to keep items in a single line */
+  align-items: center; /* Center align items vertically */
+}
+
+.p-2 {
+  padding: 10px; /* Add padding to the items */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.vr {
+  width: 1px; /* Vertical line width */
+  height: 20px; /* Vertical line height */
+  background-color: #ccc; /* Vertical line color */
+  margin: 0 10px; /* Spacing around the vertical line */
+}
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+  .hero h1 {
+    font-size: 65px;
+    /* font-weight: 400; */
+    /* line-height: 383.5px; */
+    font-family: "Allerta Stencil";
+    color: #55c2ff;
+    /* text-align: left; */
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 0;
+    margin-top: -100px;
+  }
+  .procons {
+    width: 100%;
+}
+.green_text {
+  color: #00ba6c;
+  font-size: 36px;
+  font-family: Quicksand;
+  margin-right: 0px;
+}
+.orange_text {
+  color: #fe5959;
+  font-size: 36px;
+  font-family: Quicksand;
+  margin-right: 0px;
+}
+.custom-width {
+  width: 100%;
+}
+.hero img {
+  width: 437px;
+  height: 250px;
+  margin-top: -130px;
+}
+  .hero p {
+    font-size: 18px;
+    color: #ccc;
+    /* margin-top: 20px; */
+    /* text-align: center; */
+    width: 80%;
+    margin-inline: auto;
+}
+.section img {
+  width: 100%;
+  /* max-width: 264px; */
+  /* margin: 20px 0; */
+}
+
+
+.info {
+  flex-direction: column;
+  gap:0;
+}
+.hstack.gap-3 {
+  gap: 1px!important;
+}
+.comma {
+  font-size: 100px;
+  
+}
+.reviewss {
+  display: flex
+;
+flex-direction: column;
+
+  gap: 20px;
+padding: 0px !important; */
+}
+.quick3 {
+  font-family: "Quicksand";
+  font-weight: 300;
+  font-size: 77px !important;
+}.user-review {
+  margin-left: 0rem;
+  /* font-size: 96px; */
+}
+.rating-para {
+  margin-left: 0rem; */
+}
+.section-4 {
+ margin-left: 0px; */
+}
+.button-play {
+display:none;
+}
+.d-flex.pro-text {
+  display: flex
+;
+  flex-direction: column;
+  text-align: center;
+}
+.w-90 {
+  width: 90% !important;
+}
+.verticle2.m-5 {
+  margin: 20px!important; /* Remove margin for mobile devices */
+}
+.section.d-flex.pros-cons {
+  display: flex
+;
+  flex-direction: column;
+  text-align: center;
+}
+.config {
+  margin-inline:0px; */
+  /* margin-top: 2rem; */
+}
+.component-column {
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+}
+
+.component-column .car-component {
+  margin-bottom: 10px;
+}
+
+.offer {
+  flex-direction: column;
+  align-items: center;
+  gap:0;
+  
+
+}
+
+.offer-text {
+  width: 100%;
+  text-align: center;
+ 
+}
+
+.price-info {
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.price-info-text {
+  width: 100%;
+  text-align: center;
+ 
+}
+.version {
+ margin-left: -20px;
+}
+
+.version ul {
+
+    gap: 1rem;
+}
+table {
+  width: 100%;
+ 
+}
+.table-container {
+
+ padding: 0px!important;
+}
+.price-img {
+  width: 100%;
+  text-align: center;
+}
+.button {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+.mileage-section {
+   margin-left: 0px; 
+  text-align: center;
+}
+.section {
+  padding: 25px 20px;
+}
+.advice-text {
+  margin-left:0px;
+  text-align:center;
+}
+.big-head {
+  font-size: 50px !important;
+ 
+}
+.advice {
+  display: flex
+;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.advice-para {
+ width: 100%!important; 
+}
+.config-para {
+  margin: 25px 25px;}
+.color-head {
+  font-size: 50px !important;
+ 
+}
+.price-img img {
+  width: 80%;
+  margin: 0 auto;
+}
+}
+@media (max-width: 480px) {
+  .car-name, .car-name-2, .color-price, .price-info-text p {
+      font-size: 16px;
+  }
+
+  .offer-btn {
+      width: 100%;
+  }
+  .button {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  .component-column {
+      width: 100%;
+  }
+
+  .car-parts {
+      width: 40px;
+      height: 40px;
+  }
+}
