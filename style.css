@@ -4,7 +4,9 @@ body {
   background-color: black;
   color: #fff;
 }
-
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
 .searchbar {
   display: flex;
   align-items: center;
