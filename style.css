@@ -740,12 +740,7 @@ span.review {
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
 }
-h2.car-name {
-  margin-left: 40px;
-}
-span.car-name {
-  margin-left: 40px;
-}
+
 version li.active {
   
   color: #ffb400; /* Active state text color */
@@ -792,15 +787,19 @@ version li.active {
   .procons {
     width: 100%;
 }
+.font-5 {
+  font-size: 10px;
+  
+}
 .green_text {
   color: #00ba6c;
-  font-size: 36px;
+  font-size: 25px;
   font-family: Quicksand;
   margin-right: 0px;
 }
 .orange_text {
   color: #fe5959;
-  font-size: 36px;
+  font-size: 25px;
   font-family: Quicksand;
   margin-right: 0px;
 }
@@ -808,7 +807,7 @@ version li.active {
   width: 100%;
 }
 .hero img {
-  width: 437px;
+  width: 350px;
   height: 250px;
   margin-top: -130px;
 }
@@ -835,7 +834,7 @@ version li.active {
   gap: 1px!important;
 }
 .comma {
-  font-size: 100px;
+  font-size: 50px;
   
 }
 .reviewss {
@@ -849,10 +848,20 @@ padding: 0px !important; */
 .quick3 {
   font-family: "Quicksand";
   font-weight: 300;
-  font-size: 77px !important;
+  font-size: 25px !important;
 }.user-review {
-  margin-left: 0rem;
-  /* font-size: 96px; */
+  margin-left: 25px;
+ font-size: 25px; */
+}
+.font-11 {
+  font-size: 24px !important;
+  font-family: Quicksand;
+  font-weight: 500;
+}
+.font-4 {
+  font-size: 12px !important;
+  font-family: Quicksand;
+  font-weight: 500;
 }
 .rating-para {
   margin-left: 0rem; */
@@ -956,8 +965,21 @@ table {
   text-align:center;
 }
 .big-head {
-  font-size: 50px !important;
+  font-size: 35px !important;
  
+}
+.font-7 {
+  font-size: 10px !important;
+  
+}
+.car-name {
+ 
+  font-size: 35px !important;
+  text-align: center;
+}
+.font-3 {
+  font-size: 8px;
+
 }
 .advice {
   display: flex
@@ -970,10 +992,65 @@ table {
  width: 100%!important; 
 }
 .config-para {
-  margin: 25px 25px;}
+  margin: 25px 25px;
+font-size:10px!important;}
 .color-head {
-  font-size: 50px !important;
+  font-size: 40px !important;
  
+}
+.section img {
+  height: 151px;
+  max-width: 250px;
+}
+.version ul li {
+  margin-left:15px;
+  font-size: 10px;
+  
+}
+.p-2 {
+ 
+  font-size: 15px;
+}
+.font-6 {
+ 
+  font-size: 15px !important;
+ 
+}
+.font-2 {
+  font-size: 34px !important;
+  
+}
+.font-12 {
+  font-size: 38px !important;
+  
+}
+.section-4 img {
+  /* width: 100%; */
+  max-width: 299px;
+  /* margin: 20px 0; */
+}
+
+.spar-4 {
+  
+  font-size: 39px !important;
+  
+}
+.spar-3 {
+  
+  font-size: 25px;
+  
+}
+.font-8 {
+  font-size: 22px !important;
+
+}
+.font-10 {
+  font-size: 15px !important;
+  
+}
+.section-4 {
+  
+  flex-direction: column;
 }
 .price-img img {
   width: 80%;
@@ -989,7 +1066,7 @@ table {
       width: 100%;
   }
   .button {
-    font-size: 10px;
+    font-size: 5px;
     padding: 5px 8px;
   }
   .component-column {
@@ -1000,4 +1077,102 @@ table {
       width: 40px;
       height: 40px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  html, body {
+    overflow-x: hidden !important; /* Disables horizontal scrolling */
+    overflow-y: auto;
+   
+  }
+  .hero {
+    text-align: center;
+    /* padding: 50px 20px; */
+    width: 100%
+}
+.hero h1 {
+  font-size: 170px;
+  
+}
+.hero img {
+  margin-top: -170px;
+  width: 800px;
+  height: 550px;
+ 
+}
+
+.section {
+  width: 100%;
+  flex-direction:column;
+}
+.table-container {
+  
+  width: 100%;
+}
+.verticle2 {
+  width: 85%;
+ 
+}
+.procons {
+  width: 100%;
+}
+.pro{
+  width:100%;
+
+}
+
+.reviewss {
+  
+  padding: 25px 50px;
+}
+.offer {
+
+  flex-direction: column;
+}
+.offer-text {
+  width: 100%;
+  
+}
+.price-info {
+ 
+  flex-direction: column;
+}
+.price-info-text {
+  width: 100%;
+}
+.section img {
+  width: 100%;
+  max-width: 621px;
+  /* margin: 20px 0; */
+  margin-left: 31px;
+}
+.version {
+margin-left: 0px; */
+}
+table {
+  width: 100%;
+  
+}
+.table-container {
+  
+  padding: 1px;
+}
+.advice {
+  width: 100%;
+  flex-direction: column;
+}
+.config {
+ margin-inline: 0rem!important; 
+ 
+}
+.section-4 {
+  padding: 50px 20px;
+  margin-left: 0px;
+  flex-direction: column;
+}
+.section-4 img {
+  width: 100%;
+  max-width: 600px;
+  /* margin: 20px 0; */
+  margin-left:50px;
+}
 }
