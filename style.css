@@ -633,10 +633,10 @@ table th {
 }
 .navbar-toggler-icon {
   width: 30px;
-  height: 3px;
+  height: 30px;
   background-color: white;
   display: block;
-  margin: 5px 0;
+margin-top:-20px;
 }
 .review1 {
   padding: 20px;
@@ -784,7 +784,7 @@ version li.active {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin-bottom: 0;
-    margin-top: -100px;
+    margin-top: -130px;
   }
   .procons {
     width: 100%;
